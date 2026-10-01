@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registered attendees | Campus Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="attendees">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="index.html" aria-label="Campus Events home"><span class="logo" aria-hidden="true"></span>Campus Events</a>
+      <nav aria-label="Primary"><ul><li><a href="index.html">Events</a></li><li><a href="register.html">Register</a></li><li><a href="attendees.html" aria-current="page">Admin</a></li></ul></nav>
+    </div>
+  </header>
+  <main id="main-content">
+
+    <section id="admin-panel" aria-labelledby="panel-title">
+      <div class="panel-head">
+        <div>
+          <h1 id="panel-title">Admin dashboard</h1>
+          <p class="lead">Review registrations, search attendees and export a list.</p>
+        </div>
+      </div>
+      <ul class="stats" aria-label="Summary">
+        <li><strong id="stat-total">0</strong><span>Total registrations</span></li>
+        <li><strong id="stat-events">0</strong><span>Events</span></li>
+        <li><strong id="stat-fill">0%</strong><span>Seats filled overall</span></li>
+      </ul>
+      <div class="toolbar">
+        <div class="field"><label for="admin-event">Event</label>
+          <select id="admin-event" aria-label="Choose event to view attendees"></select></div>
+        <div class="field"><label for="admin-search">Search attendees</label>
+          <input id="admin-search" type="search" placeholder="Name, student number or email" aria-label="Search attendees by name, student number or email"></div>
+        <button type="button" id="export">Export CSV</button>
+      </div>
+      <p id="attendee-count" class="count" role="status"></p>
+      <div class="table-wrap">
+        <table>
+          <caption class="visually-hidden">Attendees registered for the selected event</caption>
+          <thead><tr><th scope="col">Name</th><th scope="col">Student number</th><th scope="col">Email</th><th scope="col">Registered at</th><th scope="col">Action</th></tr></thead>
+          <tbody id="attendee-rows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">Campus Events</p>
+        <p>Browse events, save a seat and manage attendees in one place.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Events</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="attendees.html">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

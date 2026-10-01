@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upcoming events | Campus Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="events">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="index.html" aria-label="Campus Events home"><span class="logo" aria-hidden="true"></span>Campus Events</a>
+      <nav aria-label="Primary"><ul><li><a href="index.html" aria-current="page">Events</a></li><li><a href="register.html">Register</a></li><li><a href="attendees.html">Admin</a></li></ul></nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-text">
+        <h1 id="page-title">Find your next campus event.</h1>
+        <p>Workshops, fairs and ceremonies in one place. Pick one and save your seat in under a minute.</p>
+        <a class="cta" href="register.html">Register now</a>
+      </div>
+      <img src="images/hero.svg" alt="Illustration of a university building with columns, trees and a sunny sky">
+    </section>
+    <section aria-labelledby="catalog-title">
+      <h2 id="catalog-title">Upcoming events</h2>
+      <div id="event-list" class="event-grid" aria-live="polite"></div>
+    </section>
+    <section class="how" aria-labelledby="how-title">
+      <h2 id="how-title">How it works</h2>
+      <ol class="steps">
+        <li><h3>Browse events</h3><p>Read what each event is about and who is speaking.</p></li>
+        <li><h3>Register</h3><p>Enter your name, student number and university email.</p></li>
+        <li><h3>Get your seat</h3><p>Your seat is saved and organizers can see you on the attendee list.</p></li>
+      </ol>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">Campus Events</p>
+        <p>Browse events, save a seat and manage attendees in one place.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Events</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="attendees.html">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
